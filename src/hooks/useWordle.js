@@ -22,8 +22,6 @@ const useWordle=(solution)=>{
     formattedGuess.forEach((l,i)=>{
       if(solutionArray.includes(l.key)&&l.color!=='green'){
         formattedGuess[i].color='yellow'
-        solutionArray[i]=null
-        solutionArray[solutionArray.indexOf(l.key)]=null
       }
     })
 
